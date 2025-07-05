@@ -4,65 +4,77 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="WDD231 - José Lopes Home Page" />
-    <meta name="author" content="José António Andrade Lopes" />
-    <title>WDD231 | Home</title>
-    <link rel="stylesheet" href="styles/normalize.css" />
-    <link rel="stylesheet" href="styles/small.css" />
-    <link rel="stylesheet" href="styles/larger.css" />
-    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
-    <script src="scripts/navigation.js" defer></script>
-    <script src="scripts/date.js" defer></script>
-    <script src="scripts/course.js" defer></script>
+    <meta name="description" content="Course Home Page for Web Development Student">
+    <title>Course Home Page</title>
+    <link rel="stylesheet" href="styles.css" />
 </head>
 
 <body>
     <header>
-        <img src="images/logo.svg" alt="Site Logo" />
-        <span>José Lopes</span>
-        <button id="menu" aria-label="Menu">&#9776;</button>
+        <div class="branding">
+            <img src="https://via.placeholder.com/50" alt="Site Logo" />
+            <h1>Site Name</h1>
+        </div>
+        <button id="menu-toggle" aria-label="Toggle Menu">☰</button>
+        <nav id="main-nav">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Chamber Project</a></li>
+                <li><a href="#">Final Project</a></li>
+            </ul>
+        </nav>
     </header>
 
-    <nav class="navigation">
-        <a href="index.html" class="active">Home</a>
-        <a href="chamber/index.html">Chamber</a>
-        <a href="final/index.html">Final</a>
-    </nav>
-
     <main>
-        <h1>Home</h1>
-        <section>
-            <h2>About Me</h2>
-            <p>Breve descrição pessoal...</p>
-        </section>
-        <section>
-            <h2>Course Work</h2>
-            <div id="courseContainer"></div>
-            <div id="filters">
-                <button id="all">All Courses</button>
-                <button id="wdd">WDD Courses</button>
-                <button id="cse">CSE Courses</button>
+        <h2>Home</h2>
+
+        <section class="about-photo-container">
+            <div class="about-me">
+                <h3>About Me</h3>
+                <p>
+                    Massa Facilisis Per Purus Si Imperdiet Curae Amet. Et Fames Lorem Mi
+                    Phasellus Congue Nascetur Enim Consectetur Sociosqu Natoque Risus. Odio
+                    Vehicula Libero Nisl Viverra Augue Commodo Pretium Vivamus At Duis
+                    Magna. Quam Fringilla Convallis Ridiculus Malesuada Accumsan Potenti
+                    Magnis Volutpat Nulla Ipsum. Dis Maecenas Et Praesent Class Fringilla.
+                </p>
             </div>
-            <p>Total Credits: <span id="totalCredits">0</span></p>
+            <div class="photo">
+                <h3>Student Photo</h3>
+                <img src="https://via.placeholder.com/150" alt="Student photo" />
+            </div>
         </section>
-        <section>
-            <h2>Contact</h2>
-            <p>Email, redes sociais, etc.</p>
+
+        <section class="courses">
+            <h3>Web Certificate Courses</h3>
+            <div class="filters">
+                <button>All</button>
+                <button>CSE</button>
+                <button>WDD</button>
+            </div>
+            <ul class="course-list">
+                <li>WDD 130</li>
+                <li>WDD 131</li>
+                <li>WDD 231</li>
+            </ul>
+            <p class="credit-note">
+                The total credits for course listed above is <strong>6</strong>
+            </p>
         </section>
     </main>
 
     <footer>
-        <p>&copy; <span id="year"></span> José Lopes | Cabo Verde</p>
-        <p id="lastModified"></p>
-        <div class="social-icons">
-            <a href="https://github.com/teu-usuario" target="_blank">
-                <img src="images/github.svg" alt="GitHub" />
-            </a>
-            <a href="https://linkedin.com/in/teu-perfil" target="_blank">
-                <img src="images/linkedin.svg" alt="LinkedIn" />
-            </a>
+        <div class="icons">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-original.svg"
+                alt="LinkedIn" />
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="GitHub" />
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/xcode/xcode-original.svg" alt="Xcode" />
         </div>
+        <p>&copy; 2025 • Student Name • Utah, USA</p>
+        <p>Last Modification: <span id="last-mod"></span></p>
     </footer>
+
+    <script src="script.js"></script>
 </body>
 
 </html>
