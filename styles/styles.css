@@ -1,0 +1,157 @@
+:root {
+    --primary: #222;
+    --background: #f4f4f4;
+    --accent: #000;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: var(--background);
+    color: #111;
+}
+
+header {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    background: var(--primary);
+    color: white;
+    padding: 1rem;
+}
+
+.branding {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+#menu-toggle {
+    font-size: 1.5rem;
+    background: none;
+    color: white;
+    border: none;
+    display: none;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+main {
+    padding: 1rem;
+    max-width: 1000px;
+    margin: auto;
+}
+
+.about-photo-container {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 1rem;
+}
+
+.about-me,
+.photo {
+    background: #ddd;
+    padding: 1rem;
+}
+
+.photo img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.courses {
+    background: #fff;
+    padding: 1rem;
+    margin-top: 1rem;
+    border: 1px solid #ccc;
+}
+
+.filters {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 1rem;
+}
+
+.filters button {
+    padding: 0.5rem 1rem;
+    background: #ccc;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.course-list {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+}
+
+.course-list li {
+    padding: 0.5rem;
+    margin: 0.25rem 0;
+    background: #e0e0e0;
+}
+
+.credit-note {
+    text-align: center;
+    margin-top: 1rem;
+}
+
+footer {
+    text-align: center;
+    background: #ccc;
+    padding: 1rem;
+}
+
+footer .icons img {
+    width: 30px;
+    margin: 0 0.5rem;
+}
+
+@media (max-width: 768px) {
+    .about-photo-container {
+        grid-template-columns: 1fr;
+    }
+
+    #menu-toggle {
+        display: block;
+    }
+
+    #main-nav {
+        width: 100%;
+        display: none;
+        flex-direction: column;
+        background: #333;
+    }
+
+    #main-nav ul {
+        flex-direction: column;
+    }
+
+    #main-nav a {
+        padding: 1rem;
+        display: block;
+        border-top: 1px solid #555;
+    }
+
+    #main-nav.show {
+        display: flex;
+    } }
