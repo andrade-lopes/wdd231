@@ -3,10 +3,13 @@
 
 <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Business Directory - Mindelo Chamber of Commerce</title>
-    <link rel="stylesheet" href="styles/style.css" />
-    <script defer src="scripts/directory.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mindelo Chamber of Commerce</title>
+    <link rel="stylesheet" href="styles/styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <script defer src="scripts/main.js"></script>
 </head>
 
 <body>
@@ -16,9 +19,9 @@
             <nav>
                 <button class="menu-toggle" aria-label="Toggle Menu">☰</button>
                 <ul class="nav-menu">
-                    <li><a href="index.html">Home</a></li>
+                    <li><a href="index.html" class="active">Home</a></li>
                     <li><a href="discover.html">Discover</a></li>
-                    <li><a href="directory.html" class="active">Directory</a></li>
+                    <li><a href="directory.html">Directory</a></li>
                     <li><a href="join.html">Join</a></li>
                     <li><a href="events.html">Events</a></li>
                     <li><a href="contact.html">Contact</a></li>
@@ -27,26 +30,72 @@
         </div>
     </header>
 
-    <main class="section">
-        <div class="container">
-            <h2>Business Directory</h2>
-            <p>Filter members by type:</p>
-            <div id="filter-buttons">
-                <button data-filter="all" class="filter-btn active">All</button>
-                <button data-filter="gold" class="filter-btn">Gold Members</button>
-                <button data-filter="silver" class="filter-btn">Silver Members</button>
-                <button data-filter="nonprofit" class="filter-btn">Non-Profit</button>
+    <main>
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="container">
+                <h2>Empowering Mindelo's Business Community</h2>
+                <p>Connecting entrepreneurs, supporting growth, and shaping the future of commerce in Cape Verde.</p>
+                <a href="join.html" class="btn">Become a Member</a>
             </div>
+        </section>
 
-            <div id="directory-list" class="spotlight-grid">
-                <!-- Businesses will be loaded here by JS -->
+        <!-- Community Info -->
+        <section class="community-info section">
+            <div class="container">
+                <h3>About Mindelo</h3>
+                <p>Located on São Vicente Island, Mindelo is a vibrant city rich in culture, music, and entrepreneurial
+                    energy. Our Chamber of Commerce supports sustainable growth by connecting local businesses and
+                    fostering innovation.</p>
             </div>
-        </div>
+        </section>
+
+        <!-- Weather Widget -->
+        <section class="weather-widget section">
+            <div class="container">
+                <h3>Current Weather in Mindelo</h3>
+                <div id="weather-info">
+                    <p>Loading weather...</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Call to Action -->
+        <section class="cta section">
+            <div class="container">
+                <h3>Want to grow your business?</h3>
+                <p>Join a network of like-minded professionals and gain exclusive access to events, resources, and
+                    marketing tools.</p>
+                <a href="join.html" class="btn">Join the Chamber</a>
+            </div>
+        </section>
+
+        <!-- Business Spotlights -->
+        <section class="spotlights section">
+            <div class="container">
+                <h3>Member Spotlights</h3>
+                <div class="spotlight-grid">
+                    <article class="spotlight">
+                        <h4>BlueWave Tech</h4>
+                        <p>Leading innovations in Cape Verde's eco-tourism industry.</p>
+                    </article>
+                    <article class="spotlight">
+                        <h4>Café Crioulo</h4>
+                        <p>Combining traditional flavors with modern cuisine in the heart of Mindelo.</p>
+                    </article>
+                    <article class="spotlight">
+                        <h4>Mindelo Arts Association</h4>
+                        <p>Celebrating local culture and supporting emerging artists.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
     </main>
 
     <footer>
         <div class="container">
-            <p>&copy; 2025 Mindelo Chamber of Commerce. All rights reserved.</p>
+            <p>&copy; 2025 Mindelo Chamber of Commerce | Designed to support local businesses and foster economic
+                development.</p>
         </div>
     </footer>
 </body>
