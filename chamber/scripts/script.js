@@ -1,31 +1,74 @@
-// Mock Weather Widget for Mindelo
-// Replace with real API integration if desired
+const directory = document.getElementById("directory");
+const gridBtn = document.getElementById("grid");
+const listBtn = document.getElementById("list");
 
-document.addEventListener("DOMContentLoaded", () => {
-    const weatherContainer = document.getElementById("weather-info");
+async function fetchMembers() {
+  try {
+    const response = await fetch("data/members.json");
+    const data = await response.json();
+    displayMembers(data);
+  } catch (error) {
+    console.error("Error loading members:", error);
+  }
+}
 
-    // Simulated weather data
-    const weatherData = {
-        temperature: "28°C",
-        description: "Partly Cloudy",
-        humidity: "65%",
-        wind: "18 km/h",
-    };
+function displayMembers(members) {
+  directory.innerHTML = ""; // Clear previous content
+  members.forEach((member) => {
+    const card = document.createElement("div");
+    card.classList.add("card");
 
-    weatherContainer.innerHTML = `
-    <ul>
-      <li><strong>Temperature:</strong> ${weatherData.temperature}</li>
-      <li><strong>Conditions:</strong> ${weatherData.description}</li>
-      <li><strong>Humidity:</strong> ${weatherData.humidity}</li>
-      <li><strong>Wind:</strong> ${weatherData.wind}</li>
-    </ul>
-  `;
+    card.innerHTML = `
+      <img src="${member.image}" alt="Logo of ${member.name}">
+      <h3>${member.name}</h3>
+      <p>${member.address}</p>
+      <p>${member.phone}</p>
+      <a href="${member.website}" target="_blank">Visit Website</a>
+      <p class="membership ${getMembershipClass(member.membership)}">
+        ${getMembershipLabel(member.membership)}
+      </p>
+    `;
 
-    // Optional: Toggle menu for mobile navigation
-    const menuToggle = document.querySelector(".menu-toggle");
-    const navMenu = document.querySelector(".nav-menu");
+    directory.appendChild(card);
+  });
+}
 
-    menuToggle.addEventListener("click", () => {
-        navMenu.classList.toggle("active");
-    });
+function getMembershipLabel(level) {
+  switch (level) {
+    case 3: return "Gold Member";
+    case 2: return "Silver Member";
+    default: return "Member";
+  }
+}
+
+function getMembershipClass(level) {
+  switch (level) {
+    case 3: return "gold";
+    case 2: return "silver";
+    default: return "standard";
+  }
+}
+
+// Toggle Views
+gridBtn.addEventListener("click", () => {
+  directory.classList.add("grid-view");
+  directory.classList.remove("list-view");
 });
+
+listBtn.addEventListener("click", () => {
+  directory.classList.add("list-view");
+  directory.classList.remove("grid-view");
+});
+
+// Last Modified Date
+document.getElementById("lastModified").textContent = document.lastModified;
+
+// Copyright Year
+const currentYear = new Date().getFullYear();
+const copyright =
+  document.querySelector("footer p:last-child");
+if (copyright)
+  copyright.innerHTML += ` | &copy; ${currentYear}`;
+
+// Fetch on load
+fetchMembers();

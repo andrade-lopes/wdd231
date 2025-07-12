@@ -1,0 +1,58 @@
+[
+    {
+        "name": "Café Laginha",
+        "address": "Rua da Praia, Mindelo",
+        "phone": "(238) 234-5678",
+        "website": "https://cafelaginha.cv",
+        "image": "images/cafe.jpg",
+        "membership": 1
+    },
+    {
+        "name": "Mindelo Eco Tours",
+        "address": "Av. Marginal 12, Mindelo",
+        "phone": "(238) 123-4567",
+        "website": "https://mindeloecotours.cv",
+        "image": "images/eco.jpg",
+        "membership": 3
+    },
+    {
+        "name": "Casa das Artes",
+        "address": "Rua Lisboa 5, Mindelo",
+        "phone": "(238) 222-3333",
+        "website": "https://casadasartes.cv",
+        "image": "images/art.jpg",
+        "membership": 2
+    },
+    {
+        "name": "Blue Tech",
+        "address": "Tech Park, Mindelo",
+        "phone": "(238) 987-6543",
+        "website": "https://bluetech.cv",
+        "image": "images/tech.jpg",
+        "membership": 2
+    },
+    {
+        "name": "Ilha Verde Supermarket",
+        "address": "Av. 5 de Julho, Mindelo",
+        "phone": "(238) 321-6548",
+        "website": "https://ilhaverde.cv",
+        "image": "images/supermarket.jpg",
+        "membership": 1
+    },
+    {
+        "name": "Hotel Mar Azul",
+        "address": "Praça Nova, Mindelo",
+        "phone": "(238) 245-7890",
+        "website": "https://marazul.cv",
+        "image": "images/hotel.jpg",
+        "membership": 3
+    },
+    {
+        "name": "Studio Criativo",
+        "address": "Rua Lisboa 45, Mindelo",
+        "phone": "(238) 290-7890",
+        "website": "https://studiocriativo.cv",
+        "image": "images/design.jpg",
+        "membership": 1
+    }
+]
