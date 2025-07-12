@@ -150,3 +150,17 @@ footer p {
         flex: unset;
     }
 }
+
+.membership.gold {
+    color: #daa520;
+    font-weight: bold;
+}
+
+.membership.silver {
+    color: #888;
+    font-style: italic;
+}
+
+.membership.standard {
+    color: #444;
+}
