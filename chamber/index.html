@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Welcome to the Mindelo Chamber of Commerce." />
+    <meta name="author" content="Jose Lopes" />
+    <meta property="og:title" content="Mindelo Chamber of Commerce" />
+    <meta property="og:description" content="Join and discover opportunities in Mindelo." />
+    <meta property="og:image" content="images/hero.webp" />
+    <meta property="og:url" content="https://andrade-lopes.github.io/wdd231/chamber/" />
+    <link rel="icon" href="images/favicon.ico" />
+    <link rel="stylesheet" href="styles/normalize.css" />
+    <link rel="stylesheet" href="styles/styles.css" />
+    <title>Mindelo Chamber of Commerce | Home</title>
+</head>
+
+<body>
+    <header>
+        <div class="branding">
+            <img src="images/favicon.ico" alt="Mindelo Chamber Logo" />
+            <h1>Mindelo Chamber of Commerce</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="directory.html">Directory</a></li>
+                <li><a href="events.html">Events</a></li>
+                <li><a href="join.html">Join</a></li>
+                <li><a href="discover.html">Discover</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero">
+            <img src="images/hero.webp" alt="Mindelo landscape" />
+            <div class="cta">
+                <h2>Grow with Us!</h2>
+                <a href="join.html" class="join-button">Join the Chamber</a>
+            </div>
+        </section>
+
+        <!-- Current Events Section -->
+        <section class="events">
+            <h2>Upcoming Events</h2>
+            <ul>
+                <li><strong>July 25:</strong> Business Networking Night @ 6PM</li>
+                <li><strong>August 10:</strong> Entrepreneur Bootcamp</li>
+            </ul>
+        </section>
+
+        <!-- Weather Section -->
+        <section id="weather" class="weather-section">
+            <h2>Current Weather</h2>
+            <div id="weatherBox">
+                <p><strong>Location:</strong> Mindelo</p>
+                <p><strong>Temperature:</strong> <span id="temperature"></span>°C</p>
+                <p><strong>Condition:</strong> <span id="condition"></span></p>
+            </div>
+        </section>
+
+        <!-- Spotlight Section -->
+        <section class="spotlights">
+            <h2>Business Spotlights</h2>
+            <div class="spotlight-container">
+                <div class="spotlight">
+                    <img src="images/spotlight1.webp" alt="Company 1" />
+                    <h3>Cabo Verde Tech</h3>
+                    <p>Empowering digital transformation in Mindelo.</p>
+                </div>
+                <div class="spotlight">
+                    <img src="images/spotlight2.webp" alt="Company 2" />
+                    <h3>Mar Azul Hotel</h3>
+                    <p>Hospitality and comfort by the sea.</p>
+                </div>
+                <div class="spotlight">
+                    <img src="images/spotlight3.webp" alt="Company 3" />
+                    <h3>Mindelo Energy</h3>
+                    <p>Sustainable power solutions for the future.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>Mindelo Chamber of Commerce</p>
+        <p>10 Rua Libertadores de África, Mindelo, Cabo Verde</p>
+        <p>Contact: lopesjosan@gmail.com | (+238) 953-5866</p>
+        <p>Developed by Jose Lopes | WDD 231</p>
+        <p>Last modified: <span id="lastModified"></span></p>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="scripts/weather.js"></script>
+    <script>
+        document.getElementById("lastModified").textContent = document.lastModified;
+    </script>
+</body>
+
+</html>
