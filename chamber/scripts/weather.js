@@ -1,8 +1,9 @@
 // scripts/weather.js
-const apiKey = "SUA_API_KEY_AQUI"; // Substitua pela sua chave da OpenWeatherMap
+const apiKey = "dc859def446598f0e4bb8581426ef7fb"; // Substitua pela sua chave da OpenWeatherMap
 const lat = 16.8901; // Latitude de Mindelo
 const lon = -24.9804; // Longitude de Mindelo
 const units = "metric"; // Celsius
+const weatherBox = document.getElementById('weatherBox');
 
 async function getWeather() {
     const url = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&units=${units}&appid=${apiKey}`;
