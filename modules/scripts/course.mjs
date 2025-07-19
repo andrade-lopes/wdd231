@@ -1,5 +1,5 @@
 const byuiCourse = {
-    code: "WDD231",
+    code: "José Lopes - WDD231",
     name: "Web Frontend Development I",
     sections: [
         {
