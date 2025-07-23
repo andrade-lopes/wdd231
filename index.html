@@ -24,6 +24,33 @@
     <title>José Lopes - Student Portfolio</title>
     <link rel="stylesheet" href="styles/styles.css" />
     <link rel="icon" type="image/x-icon" href="favicon.ico">
+
+    <style>
+        dialog {
+            width: 90%;
+            max-width: 500px;
+            padding: 20px;
+            border-radius: 10px;
+            border: none;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+        }
+
+        ::backdrop {
+            background: rgba(0, 0, 0, 0.5);
+        }
+
+        .course-buttons {
+            display: flex;
+            gap: 1rem;
+            margin-top: 1rem;
+        }
+
+        .course-buttons button {
+            padding: 0.5rem 1rem;
+            font-size: 1rem;
+        }
+    </style>
+
 </head>
 
 <body>
@@ -74,10 +101,21 @@
                 <li>WDD 131</li>
                 <li>WDD 231</li>
             </ul>
+            <div class="course-buttons">
+                <button class="openModalBtn" data-course="wdd130">WDD 130 Details</button>
+                <button class="openModalBtn" data-course="wdd131">WDD 131 Details</button>
+                <button class="openModalBtn" data-course="wdd231">WDD 231 Details</button>
+            </div>
             <p class="credit-note">
                 The total credits for course listed above is <strong>6</strong>
             </p>
         </section>
+        <!-- Modal -->
+        <dialog id="courseModal">
+            <h2 id="modalTitle">Course Title</h2>
+            <p id="modalDescription">Course description goes here...</p>
+            <button id="closeModal">Close</button>
+        </dialog>
     </main>
 
     <footer>
@@ -90,6 +128,45 @@
         <p>&copy; 2025 • Student Name • Utah, USA</p>
         <p>Last Modification: <span id="last-mod"></span></p>
     </footer>
+
+    <script>
+        const modal = document.getElementById('courseModal');
+        const modalTitle = document.getElementById('modalTitle');
+        const modalDescription = document.getElementById('modalDescription');
+        const closeModalBtn = document.getElementById('closeModal');
+
+        const courseData = {
+            wdd130: {
+                title: "WDD 130 - Web Fundamentals",
+                description: "Introduction to HTML, CSS, and basic website structure. Build and publish your first webpage."
+            },
+            wdd131: {
+                title: "WDD 131 - Dynamic Web Fundamentals",
+                description: "Learn JavaScript basics, DOM manipulation, and dynamic interactions on websites."
+            },
+            wdd231: {
+                title: "WDD 231 - Frontend Development I",
+                description: "Explore responsive design, APIs, and advanced JavaScript for building interactive web apps."
+            }
+        };
+
+        document.querySelectorAll('.openModalBtn').forEach(btn => {
+            btn.addEventListener('click', () => {
+                const key = btn.getAttribute('data-course');
+                const course = courseData[key];
+                modalTitle.textContent = course.title;
+                modalDescription.textContent = course.description;
+                modal.showModal();
+            });
+        });
+
+        closeModalBtn.addEventListener('click', () => {
+            modal.close();
+        });
+
+        // Optional: update last modified date
+        document.getElementById("last-mod").textContent = document.lastModified;
+    </script>
 
     <script src="scripts/script.js"></script>
 </body>
