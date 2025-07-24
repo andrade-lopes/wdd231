@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Animations & Transitions Guide</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+            padding: 2rem;
+            line-height: 1.6;
+        }
+
+        h1,
+        h2 {
+            color: #2c3e50;
+        }
+
+        .example {
+            margin: 2rem 0;
+            padding: 1rem;
+            background: #ffffff;
+            border-left: 4px solid #3498db;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .box {
+            width: 150px;
+            height: 150px;
+            background-color: white;
+            border: 2px solid #ccc;
+            margin: 1rem auto;
+            transition: background-color 0.5s ease;
+        }
+
+        .box:hover {
+            background-color: lightblue;
+        }
+
+        .animated-box {
+            width: 150px;
+            height: 150px;
+            margin: 1rem auto;
+            background: crimson;
+            animation: slideIn 2s ease-in-out infinite alternate;
+        }
+
+        @keyframes slideIn {
+            from {
+                transform: translateX(-100%);
+            }
+
+            to {
+                transform: translateX(0);
+            }
+        }
+
+        @media (prefers-reduced-motion: reduce) {
+
+            *,
+            *::before,
+            *::after {
+                animation: none !important;
+                transition: none !important;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <h1>CSS Animations & Transitions</h1>
+
+    <h2>1. Transition Example</h2>
+    <div class="example">
+        <p>Hover over the box below to see the background color transition smoothly:</p>
+        <div class="box"></div>
+        <pre><code>transition: background-color 0.5s ease;</code></pre>
+    </div>
+
+    <h2>2. Animation Example</h2>
+    <div class="example">
+        <p>This box slides in from the left using keyframes and <code>animation</code>:</p>
+        <div class="animated-box"></div>
+        <pre><code>@keyframes slideIn {
+  from { transform: translateX(-100%); }
+  to { transform: translateX(0); }
+}
+
+.animated-box {
+  animation: slideIn 2s ease-in-out infinite alternate;
+}</code></pre>
+    </div>
+
+    <h2>3. Accessibility with prefers-reduced-motion</h2>
+    <div class="example">
+        <p>For users who prefer reduced motion, all transitions and animations are disabled automatically using media
+            queries:</p>
+        <pre><code>@media (prefers-reduced-motion: reduce) {
+  * {
+    animation: none !important;
+    transition: none !important;
+  }
+}</code></pre>
+    </div>
+
+    <h2>Advantages of CSS Animations</h2>
+    <ul>
+        <li><strong>Performance:</strong> Uses GPU acceleration for smoother animations</li>
+        <li><strong>Ease of Use:</strong> Simple syntax and no JavaScript required</li>
+        <li><strong>Flexibility:</strong> Works for transitions, transforms, fades, rotations, etc.</li>
+        <li><strong>Browser Compatibility:</strong> Widely supported with graceful degradation</li>
+        <li><strong>Accessibility:</strong> Can enhance user experience with visual feedback</li>
+    </ul>
+</body>
+
+</html>
