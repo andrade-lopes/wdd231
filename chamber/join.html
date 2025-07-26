@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Join the Mindelo Chamber of Commerce" />
+    <title>Join | Mindelo Chamber of Commerce</title>
+    <link rel="stylesheet" href="styles/base.css" />
+    <link rel="stylesheet" href="styles/join.css" />
+</head>
+
+<body>
+    <header>
+        <h1>Mindelo Chamber of Commerce</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="discover.html">Discover</a></li>
+                <li><a href="directory.html">Directory</a></li>
+                <li><a href="join.html" class="active">Join</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Join the Chamber</h2>
+        <form method="get" action="thankyou.html">
+            <label>
+                First Name:
+                <input type="text" name="fname" title="Your first name" autocomplete="given-name" required />
+            </label>
+
+            <label>
+                Last Name:
+                <input type="text" name="lname" title="Your last name" autocomplete="family-name" required />
+            </label>
+
+            <label>
+                Organizational Title:
+                <input type="text" name="orgtitle" title="Your title in the organization"
+                    autocomplete="organization-title" pattern="[A-Za-z\s\-]{7,}" />
+            </label>
+
+            <label>
+                Email:
+                <input type="email" name="email" title="Your email address" autocomplete="email"
+                    placeholder="name@example.com" required />
+            </label>
+
+            <label>
+                Mobile Phone:
+                <input type="tel" name="phone" title="Your mobile number" autocomplete="tel" required />
+            </label>
+
+            <label>
+                Organization Name:
+                <input type="text" name="organization" title="Organization name" autocomplete="organization" required />
+            </label>
+
+            <label>
+                Membership Level:
+                <select name="membership" title="Select membership level" required>
+                    <option value="" disabled selected>Select a level</option>
+                    <option value="NP">NP Membership (Non-profit)</option>
+                    <option value="Bronze">Bronze Membership</option>
+                    <option value="Silver">Silver Membership</option>
+                    <option value="Gold">Gold Membership</option>
+                </select>
+            </label>
+
+            <label>
+                Organization Description:
+                <textarea name="description" title="Brief description of your organization"></textarea>
+            </label>
+
+            <input type="hidden" id="timestamp" name="timestamp" />
+
+            <input type="submit" value="Join Now" />
+        </form>
+
+        <section class="membership-cards">
+            <h3>Membership Levels</h3>
+            <div class="cards-container">
+                <div class="card">
+                    <h4>NP Membership</h4>
+                    <p>For non-profit organizations. Free membership.</p>
+                    <a href="#npModal">More Info</a>
+                </div>
+                <div class="card">
+                    <h4>Bronze</h4>
+                    <p>Basic level with access to events and resources.</p>
+                    <a href="#bronzeModal">More Info</a>
+                </div>
+                <div class="card">
+                    <h4>Silver</h4>
+                    <p>Includes training and spotlight promotions.</p>
+                    <a href="#silverModal">More Info</a>
+                </div>
+                <div class="card">
+                    <h4>Gold</h4>
+                    <p>All benefits including featured directory listing.</p>
+                    <a href="#goldModal">More Info</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Modals -->
+        <dialog id="npModal">
+            <h4>NP Membership Benefits</h4>
+            <p>Access to events and community forums. No cost.</p>
+            <button onclick="document.getElementById('npModal').close()">Close</button>
+        </dialog>
+
+        <dialog id="bronzeModal">
+            <h4>Bronze Benefits</h4>
+            <p>Access to events, basic promotions, and support.</p>
+            <button onclick="document.getElementById('bronzeModal').close()">Close</button>
+        </dialog>
+
+        <dialog id="silverModal">
+            <h4>Silver Benefits</h4>
+            <p>Includes all Bronze benefits plus spotlight ads and training sessions.</p>
+            <button onclick="document.getElementById('silverModal').close()">Close</button>
+        </dialog>
+
+        <dialog id="goldModal">
+            <h4>Gold Benefits</h4>
+            <p>Includes all Silver benefits plus premium promotions and custom events.</p>
+            <button onclick="document.getElementById('goldModal').close()">Close</button>
+        </dialog>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="year"></span> Mindelo Chamber of Commerce</p>
+    </footer>
+
+    <script>
+        // Set timestamp on hidden input
+        document.getElementById("timestamp").value = new Date().toISOString();
+
+        // Modal triggers
+        document.querySelectorAll("a[href^='#']").forEach(link => {
+            link.addEventListener("click", function (e) {
+                e.preventDefault();
+                const modal = document.querySelector(this.getAttribute("href"));
+                if (modal) modal.showModal();
+            });
+        });
+
+        // Year in footer
+        document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Thank you for joining the Mindelo Chamber of Commerce" />
+    <title>Thank You | Mindelo Chamber of Commerce</title>
+    <link rel="stylesheet" href="styles/base.css" />
+    <link rel="stylesheet" href="styles/join.css" />
+    <style>
+        .thankyou {
+            padding: 2rem;
+            text-align: center;
+        }
+
+        .summary {
+            background-color: #f1f1f1;
+            padding: 1.5rem;
+            margin-top: 2rem;
+            border-radius: 1rem;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+            animation: fadeIn 1s ease-out;
+        }
+
+        .summary h3 {
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+            color: #0078a6;
+        }
+
+        .summary ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .summary li {
+            margin: 0.5rem 0;
+            font-size: 1rem;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Mindelo Chamber of Commerce</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="discover.html">Discover</a></li>
+                <li><a href="directory.html">Directory</a></li>
+                <li><a href="join.html">Join</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="thankyou">
+            <h2>Thank You for Joining!</h2>
+            <p>We appreciate your interest in becoming a member of the Chamber.</p>
+
+            <div class="summary">
+                <h3>Submitted Information</h3>
+                <ul>
+                    <li><strong>First Name:</strong> <span id="firstName"></span></li>
+                    <li><strong>Last Name:</strong> <span id="lastName"></span></li>
+                    <li><strong>Email:</strong> <span id="email"></span></li>
+                    <li><strong>Phone:</strong> <span id="phone"></span></li>
+                    <li><strong>Business Name:</strong> <span id="organization"></span></li>
+                    <li><strong>Submitted At:</strong> <span id="timestamp"></span></li>
+                </ul>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="year"></span> Mindelo Chamber of Commerce. All rights reserved.</p>
+    </footer>
+
+    <script>
+        const urlParams = new URLSearchParams(window.location.search);
+        document.getElementById("firstName").textContent = urlParams.get("fname") || "N/A";
+        document.getElementById("lastName").textContent = urlParams.get("lname") || "N/A";
+        document.getElementById("email").textContent = urlParams.get("email") || "N/A";
+        document.getElementById("phone").textContent = urlParams.get("phone") || "N/A";
+        document.getElementById("organization").textContent = urlParams.get("organization") || "N/A";
+        document.getElementById("timestamp").textContent = urlParams.get("timestamp") || "N/A";
+
+        // Set year in footer
+        document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+</body>
+
+</html>
