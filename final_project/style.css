@@ -12,9 +12,18 @@ body {
     color: #333;
 }
 
+.title-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2rem;
+    background-color: #e76f51;
+}
+
 h1 {
     color: var(--primary-color);
     font-family: var(--heading-font);
+    /*background-color: #e76f51;*/
     text-align: center;
 }
 
