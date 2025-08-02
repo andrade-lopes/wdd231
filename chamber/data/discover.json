@@ -1,0 +1,50 @@
+[
+    {
+        "name": "Praia da Laginha",
+        "address": "Mindelo, São Vicente",
+        "description": "Praia urbana com águas calmas e areia clara, ideal para banho e caminhadas.",
+        "image": "images/laginha.webp"
+    },
+    {
+        "name": "Monte Cara",
+        "address": "Oeste de Mindelo",
+        "description": "Montanha com formato de rosto humano, um símbolo icônico da cidade.",
+        "image": "images/monte-cara.webp"
+    },
+    {
+        "name": "Mercado Municipal",
+        "address": "Rua Lisboa, Mindelo",
+        "description": "Mercado tradicional com produtos frescos e artesanato local.",
+        "image": "images/mercado.webp"
+    },
+    {
+        "name": "Palácio do Povo",
+        "address": "Av. Marginal, Mindelo",
+        "description": "Edifício histórico com arquitetura colonial e exposições culturais.",
+        "image": "images/palacio-do-povo.webp"
+    },
+    {
+        "name": "Torre de Belém",
+        "address": "Porto de Mindelo",
+        "description": "Réplica da torre portuguesa, situada à beira-mar.",
+        "image": "images/torre-belem.webp"
+    },
+    {
+        "name": "Centro Cultural do Mindelo",
+        "address": "Rua da Luz, Mindelo",
+        "description": "Espaço cultural com exposições, música e arte local.",
+        "image": "images/centro-cultural.webp"
+    },
+    {
+        "name": "Praça Nova",
+        "address": "Centro, Mindelo",
+        "description": "Praça central com jardins, bancos e vida noturna animada.",
+        "image": "images/praca-nova.webp"
+    },
+    {
+        "name": "Ilhéu dos Pássaros",
+        "address": "Frente à costa de Mindelo",
+        "description": "Pequena ilha com biodiversidade única, ideal para observação.",
+        "image": "images/ilheu-passaros.webp"
+    }
+]
