@@ -1,50 +1,50 @@
 [
     {
-        "name": "Praia da Laginha",
+        "name": "Laginha Beach",
         "address": "Mindelo, São Vicente",
-        "description": "Praia urbana com águas calmas e areia clara, ideal para banho e caminhadas.",
+        "description": "Urban beach with calm waters and light sand, ideal for swimming and walking.",
         "image": "images/laginha.webp"
     },
     {
         "name": "Monte Cara",
-        "address": "Oeste de Mindelo",
-        "description": "Montanha com formato de rosto humano, um símbolo icônico da cidade.",
+        "address": "West of Mindelo",
+        "description": "Mountain shaped like a human face, an iconic symbol of the city.",
         "image": "images/monte-cara.webp"
     },
     {
-        "name": "Mercado Municipal",
-        "address": "Rua Lisboa, Mindelo",
-        "description": "Mercado tradicional com produtos frescos e artesanato local.",
+        "name": "Municipal Market",
+        "address": "Lisbon Street, Mindelo",
+        "description": "Traditional market with fresh produce and local crafts.",
         "image": "images/mercado.webp"
     },
     {
-        "name": "Palácio do Povo",
-        "address": "Av. Marginal, Mindelo",
-        "description": "Edifício histórico com arquitetura colonial e exposições culturais.",
+        "name": "People's Palace",
+        "address": "Downtown, Mindelo",
+        "description": "Historic building with colonial architecture and cultural exhibits.",
         "image": "images/palacio-do-povo.webp"
     },
     {
-        "name": "Torre de Belém",
-        "address": "Porto de Mindelo",
-        "description": "Réplica da torre portuguesa, situada à beira-mar.",
+        "name": "Belém Tower",
+        "address": "Beach Street, Mindelo",
+        "description": "Replica of the Portuguese tower, located on the seafront.",
         "image": "images/torre-belem.webp"
     },
     {
-        "name": "Centro Cultural do Mindelo",
-        "address": "Rua da Luz, Mindelo",
-        "description": "Espaço cultural com exposições, música e arte local.",
+        "name": "Mindelo Cultural Center",
+        "address": "Marginal Avenue, Mindelo",
+        "description": "Cultural space with exhibitions, music, and local art.",
         "image": "images/centro-cultural.webp"
     },
     {
-        "name": "Praça Nova",
-        "address": "Centro, Mindelo",
-        "description": "Praça central com jardins, bancos e vida noturna animada.",
+        "name": "Praça Nova Square",
+        "address": "Downtown, Mindelo",
+        "description": "Central square with gardens, benches, and lively nightlife.",
         "image": "images/praca-nova.webp"
     },
     {
-        "name": "Ilhéu dos Pássaros",
-        "address": "Frente à costa de Mindelo",
-        "description": "Pequena ilha com biodiversidade única, ideal para observação.",
+        "name": "Bird Islet",
+        "address": "Front of the coast of Mindelo",
+        "description": "Small island with unique biodiversity, ideal for birdwatching.",
         "image": "images/ilheu-passaros.webp"
     }
 ]
