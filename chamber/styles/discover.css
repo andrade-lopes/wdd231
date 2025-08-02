@@ -1,0 +1,65 @@
+.discover-grid {
+    display: grid;
+    gap: 1rem;
+    padding: 1rem;
+}
+
+.card {
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card h2 {
+    margin: 0.5rem 0;
+}
+
+.card figure {
+    margin: 0;
+}
+
+.card img {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    border-radius: 8px;
+}
+
+/* Hover effect: apenas em telas médias ou grandes */
+@media (min-width: 641px) {
+    .card img:hover {
+        transform: scale(1.05);
+        filter: brightness(1.05);
+        transition: all 0.3s ease-in-out;
+    }
+}
+
+/* Grid Layouts */
+@media (max-width: 640px) {
+    .discover-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (min-width: 641px) and (max-width: 1024px) {
+    .discover-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (min-width: 1025px) {
+    .discover-grid {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+.sidebar {
+    background: #f0f0f0;
+    padding: 1rem;
+    text-align: center;
+    font-style: italic;
+}
