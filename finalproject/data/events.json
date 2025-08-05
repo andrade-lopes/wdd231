@@ -14,7 +14,109 @@
         "location": "Centro Cultural do Mindelo",
         "description": "Artistas locais apresentam suas obras mais recentes.",
         "image": "images/arte1.jpg"
+    },
+    {
+        "id": 3,
+        "title": "Feira de Artesanato",
+        "date": "2025-09-10",
+        "location": "Mercado Municipal",
+        "description": "Produtos artesanais e gastronomia típica de Cabo Verde.",
+        "image": "images/artesanato1.jpg"
+    },
+    {
+        "id": 4,
+        "title": "Concerto de Morna",
+        "date": "2025-09-20",
+        "location": "Auditório Nacional",
+        "description": "Apresentação de músicos renomados da morna e coladeira.",
+        "image": "images/morna1.jpg"
+    },
+    {
+        "id": 5,
+        "title": "Festival de Teatro",
+        "date": "2025-10-05",
+        "location": "Teatro Municipal",
+        "description": "Companhias teatrais apresentam peças contemporâneas e tradicionais.",
+        "image": "images/teatro1.jpg"
+    },
+    {
+        "id": 6,
+        "title": "Encontro de Dança Tradicional",
+        "date": "2025-10-12",
+        "location": "Praça Amílcar Cabral",
+        "description": "Grupos folclóricos de várias ilhas se apresentam.",
+        "image": "images/danca1.jpg"
+    },
+    {
+        "id": 7,
+        "title": "Semana Gastronômica",
+        "date": "2025-10-20",
+        "location": "Avenida Marginal",
+        "description": "Restaurantes locais apresentam pratos típicos e contemporâneos.",
+        "image": "images/gastronomia1.jpg"
+    },
+    {
+        "id": 8,
+        "title": "Noite de Jazz",
+        "date": "2025-11-01",
+        "location": "Bar Cultural Mindelo",
+        "description": "Artistas de jazz locais e internacionais.",
+        "image": "images/jazz1.jpg"
+    },
+    {
+        "id": 9,
+        "title": "Festival de Cinema",
+        "date": "2025-11-10",
+        "location": "Centro Cultural do Mindelo",
+        "description": "Exibição de filmes cabo-verdianos e internacionais.",
+        "image": "images/cinema1.jpg"
+    },
+    {
+        "id": 10,
+        "title": "Palestra sobre História Local",
+        "date": "2025-11-15",
+        "location": "Biblioteca Municipal",
+        "description": "Historiadores compartilham pesquisas sobre a cidade.",
+        "image": "images/historia1.jpg"
+    },
+    {
+        "id": 11,
+        "title": "Exposição Fotográfica",
+        "date": "2025-11-25",
+        "location": "Galeria Mindelo",
+        "description": "Fotógrafos capturam a essência da vida em Cabo Verde.",
+        "image": "images/fotografia1.jpg"
+    },
+    {
+        "id": 12,
+        "title": "Festival de Música Eletrônica",
+        "date": "2025-12-05",
+        "location": "Praia da Laginha",
+        "description": "DJs e produtores animam a noite com música eletrônica.",
+        "image": "images/eletronica1.jpg"
+    },
+    {
+        "id": 13,
+        "title": "Feira do Livro",
+        "date": "2025-12-12",
+        "location": "Praça Nova",
+        "description": "Editoras e autores apresentam lançamentos e obras clássicas.",
+        "image": "images/livro1.jpg"
+    },
+    {
+        "id": 14,
+        "title": "Show de Humor",
+        "date": "2025-12-20",
+        "location": "Teatro Municipal",
+        "description": "Comediantes apresentam espetáculos divertidos para toda a família.",
+        "image": "images/humor1.jpg"
+    },
+    {
+        "id": 15,
+        "title": "Festa de Ano Novo",
+        "date": "2025-12-31",
+        "location": "Avenida Marginal",
+        "description": "Celebração de Ano Novo com música, dança e fogos de artifício.",
+        "image": "images/anonovo1.jpg"
     }
-    // ... adicionar mais até pelo menos 15 itens //
-    
 ]
