@@ -17,10 +17,10 @@ document.addEventListener("DOMContentLoaded", () => {
 
     if (lastVisit) {
         const daysDiff = Math.floor((now - lastVisit) / (1000 * 60 * 60 * 24));
-        console.log(`Sua última visita foi há ${daysDiff} dias.`);
+        console.log(`Your last visit was ${daysDiff} days.`);
         // Aqui você pode exibir essa informação no DOM se quiser
     } else {
-        console.log("Bem-vindo! Esta é sua primeira visita.");
+        console.log("Welcome! This is your first visit.");
     }
 
     localStorage.setItem("lastVisit", now);
