@@ -1,0 +1,20 @@
+[
+    {
+        "id": 1,
+        "title": "Festival de Música de Mindelo",
+        "date": "2025-08-15",
+        "location": "Praça Nova",
+        "description": "O maior festival de música ao ar livre de Cabo Verde.",
+        "image": "images/evento1.jpg"
+    },
+    {
+        "id": 2,
+        "title": "Exposição de Arte Local",
+        "date": "2025-09-01",
+        "location": "Centro Cultural do Mindelo",
+        "description": "Artistas locais apresentam suas obras mais recentes.",
+        "image": "images/arte1.jpg"
+    }
+    // ... adicionar mais até pelo menos 15 itens //
+    
+]
