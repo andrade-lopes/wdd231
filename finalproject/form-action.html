@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Message Received - Mindelo Art & Culture</title>
+    <meta name="description" content="Message received by Mindelo Art & Culture.">
+    <meta name="author" content="Jose Lopes">
+
+    <!-- Favicon -->
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <main class="page-header">
+        <h1>Message Received</h1>
+        <p><strong>Name:</strong> <span id="output-name"></span></p>
+        <p><strong>E-mail:</strong> <span id="output-email"></span></p>
+        <p><strong>Message:</strong> <span id="output-message"></span></p>
+        <a href="index.html">Back to home</a>
+    </main>
+
+    <script>
+        const params = new URLSearchParams(window.location.search);
+        document.getElementById("output-name").textContent = params.get("name");
+        document.getElementById("output-email").textContent = params.get("email");
+        document.getElementById("output-message").textContent = params.get("message");
+    </script>
+
+</body>
+
+</html>
