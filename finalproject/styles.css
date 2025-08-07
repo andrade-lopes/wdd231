@@ -75,7 +75,8 @@ nav a:hover {
    Hero Section
 -------------------- */
 .hero {
-    height: 50vh; /* altura total da janela */
+    height: 50vh;
+    /* altura total da janela */
     background: url('images/montecara.jpeg') no-repeat center center/cover;
     display: flex;
     align-items: center;
@@ -140,23 +141,36 @@ nav a:hover {
     margin-bottom: 1.5rem;
 }
 
-.highlights .grid {
+.cards-grid {
     display: grid;
-    grid-template-columns: 1fr;
-    gap: 1.5rem;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    padding: 2rem;
+    align-items: stretch;
 }
 
-.highlights article {
-    background: white;
+.card {
+    background-color: #fff;
     padding: 1rem;
-    border-radius: 8px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
 }
 
-.highlights img {
-    max-width: 100%;
-    border-radius: 1px;
+.card img {
+    width: 100%;
+    max-width: 200px;
+    /* controls the maximum width */
+    height: 150px;
+    /* força uma altura fixa */
+    object-fit: cover;
+    /* recorta a imagem de forma proporcional */
+    border-radius: 8px;
+    margin-bottom: 1rem;
 }
 
 /* --------------------
