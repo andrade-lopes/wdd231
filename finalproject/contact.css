@@ -77,13 +77,20 @@ nav a:hover {
 .hero {
     height: 50vh;
     /* altura total da janela */
-    background: url('images/mindelo_art_culture.jpg') no-repeat center center/cover;
+    background: url('images/mindelo_art_culture.jpg') no-repeat center center/contain;
     display: flex;
     align-items: center;
     justify-content: center;
     text-align: center;
     position: relative;
     color: white;
+}
+
+.hero img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    /* ou 'cover', dependendo do efeito desejado */
 }
 
 /* Sobreposição para melhorar contraste */
