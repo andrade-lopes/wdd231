@@ -166,6 +166,10 @@ nav a:hover {
     color: #555;
 }
 
+.event-card small {
+    color: #999;
+}
+
 /* --------------------
    Footer
 -------------------- */

@@ -33,7 +33,7 @@ function renderEvents(events) {
         <article class="event-card">
             <img src="${event.image}" alt="${event.title}" loading="lazy">
             <h3>${event.title}</h3>
-            <p><strong>Data:</strong> ${event.date}</p>
+            <p><strong>Data:</strong> ${new Date(event.date).toLocaleDateString('en-US')}</p>
             <p><strong>Local:</strong> ${event.location}</p>
             <p>${event.description}</p>
             <button class="details-btn" data-id="${event.id}">See more</button>
