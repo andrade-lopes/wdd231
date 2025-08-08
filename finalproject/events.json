@@ -1,0 +1,77 @@
+[
+    {
+        "title": "Festival de Música",
+        "description": "Bandas locais e internacionais.",
+        "date": "2025-08-15"
+    },
+    {
+        "title": "Feira de Artesanato",
+        "description": "Produtos feitos à mão.",
+        "date": "2025-09-02"
+    },
+    {
+        "title": "Corrida de São Vicente",
+        "description": "Competição pelas ruas.",
+        "date": "2025-10-10"
+    },
+    {
+        "title": "Exposição de Fotografia",
+        "description": "Imagens de artistas locais.",
+        "date": "2025-08-20"
+    },
+    {
+        "title": "Teatro ao Ar Livre",
+        "description": "Peças encenadas na praça central.",
+        "date": "2025-09-15"
+    },
+    {
+        "title": "Workshop de Culinária",
+        "description": "Gastronomia típica.",
+        "date": "2025-08-28"
+    },
+    {
+        "title": "Feira do Livro",
+        "description": "Venda e troca de livros.",
+        "date": "2025-09-10"
+    },
+    {
+        "title": "Festival de Cinema",
+        "description": "Exibição de filmes independentes.",
+        "date": "2025-10-01"
+    },
+    {
+        "title": "Aula de Dança",
+        "description": "Aprenda passos tradicionais.",
+        "date": "2025-08-18"
+    },
+    {
+        "title": "Concerto de Jazz",
+        "description": "Músicos de Cabo Verde e estrangeiros.",
+        "date": "2025-09-20"
+    },
+    {
+        "title": "Festival do Mar",
+        "description": "Atividades e comida à beira-mar.",
+        "date": "2025-08-25"
+    },
+    {
+        "title": "Palestra de História Local",
+        "description": "História e cultura da cidade.",
+        "date": "2025-09-05"
+    },
+    {
+        "title": "Encontro de Startups",
+        "description": "Networking e apresentações.",
+        "date": "2025-09-25"
+    },
+    {
+        "title": "Mostra de Arte",
+        "description": "Pinturas e esculturas de artistas locais.",
+        "date": "2025-08-30"
+    },
+    {
+        "title": "Corrida de Barcos",
+        "description": "Competição náutica tradicional.",
+        "date": "2025-10-05"
+    }
+]
