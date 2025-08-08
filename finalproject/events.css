@@ -77,7 +77,7 @@ nav a:hover {
 .hero {
     height: 50vh;
     /* altura total da janela */
-    background: url('images/mindelo_art_culture.jpg') no-repeat center center/cover;
+    background: url('images/mindelo_art_culture.jpg') no-repeat center center/contain;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -158,6 +158,14 @@ footer a {
         width: 200px;
         padding: 1rem;
     }
+
+@media (max-width: 768px) {
+    .hero {
+        background-size: contain;
+        background-color: black;
+        /* fundo atrás da imagem */
+    }
+}
 
     nav ul.show {
         display: flex;

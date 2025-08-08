@@ -166,6 +166,14 @@ footer a {
         padding: 1rem;
     }
 
+@media (max-width: 768px) {
+    .hero {
+        background-size: contain;
+        background-color: black;
+        /* fundo atrás da imagem */
+    }
+}
+
     nav ul.show {
         display: flex;
     }
