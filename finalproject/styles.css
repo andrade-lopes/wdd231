@@ -111,13 +111,6 @@ nav a:hover {
     z-index: 1;
 }
 
-/* Conteúdo do hero */
-.hero>* {
-    position: relative;
-    z-index: 2;
-    /* garante que o texto fique acima das imagens */
-}
-
 .hero-content {
     position: relative;
     z-index: 2;
