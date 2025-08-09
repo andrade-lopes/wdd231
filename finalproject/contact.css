@@ -192,6 +192,24 @@ nav a:hover {
     background-color: #0056b3;
 }
 
+/* 📱 Mobile-friendly */
+@media (max-width: 600px) {
+    .contact-form form {
+        grid-template-columns: 1fr;
+        /* uma única coluna */
+    }
+
+    .contact-form label {
+        justify-self: start;
+        /* alinha label à esquerda */
+    }
+
+    .contact-form button {
+        justify-self: stretch;
+        /* botão ocupa toda a largura */
+    }
+}
+
 /* --------------------
    Footer
 -------------------- */
