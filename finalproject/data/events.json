@@ -1,99 +1,99 @@
 [
     {
         "id": 1,
-        "title": "Festival de Música de Mindelo",
+        "title": "Mindelo Music Festival",
         "date": "2025-08-15",
-        "location": "Praça Nova",
-        "description": "O maior festival de música ao ar livre de Cabo Verde.",
-        "image": "images/evento1.jpg"
+        "location": "Baía das Gatas Beach",
+        "description": "The largest open-air music festival in Cape Verde.",
+        "image": "images/manel.jpg"
     },
     {
         "id": 2,
-        "title": "Exposição de Arte Local",
-        "date": "2025-09-01",
-        "location": "Centro Cultural do Mindelo",
-        "description": "Artistas locais apresentam suas obras mais recentes.",
-        "image": "images/arte1.jpg"
+        "title": "Local Art Exhibition",
+        "date": "2025-08-24",
+        "location": "Amilcar Cabral Square",
+        "description": "Local artists present their latest works.",
+        "image": "images/cnad.jpg"
     },
     {
         "id": 3,
-        "title": "Feira de Artesanato",
-        "date": "2025-09-10",
-        "location": "Mercado Municipal",
-        "description": "Produtos artesanais e gastronomia típica de Cabo Verde.",
-        "image": "images/artesanato1.jpg"
+        "title": "Crafts Fair",
+        "date": "2025-09-26",
+        "location": "Don Luís Square",
+        "description": "Artisan products and typical Cape Verdean cuisine.",
+        "image": "images/donluis.jpg"
     },
     {
         "id": 4,
-        "title": "Concerto de Morna",
+        "title": "Morna Concert",
         "date": "2025-09-20",
-        "location": "Auditório Nacional",
-        "description": "Apresentação de músicos renomados da morna e coladeira.",
-        "image": "images/morna1.jpg"
+        "location": "Don Luís Square",
+        "description": "Performance by renowned morna and coladeira musicians.",
+        "image": "images/morna.jpeg"
     },
     {
         "id": 5,
-        "title": "Festival de Teatro",
+        "title": "Theater Festival",
         "date": "2025-10-05",
-        "location": "Teatro Municipal",
-        "description": "Companhias teatrais apresentam peças contemporâneas e tradicionais.",
-        "image": "images/teatro1.jpg"
+        "location": "Mindelo Cultural Center",
+        "description": "Theater companies present contemporary and traditional plays.",
+        "image": "images/teatro.jpg"
     },
     {
         "id": 6,
-        "title": "Encontro de Dança Tradicional",
+        "title": "Traditional Dance Meeting",
         "date": "2025-10-12",
-        "location": "Praça Amílcar Cabral",
-        "description": "Grupos folclóricos de várias ilhas se apresentam.",
-        "image": "images/danca1.jpg"
+        "location": "Hotel Mindelo",
+        "description": "Folklore groups from various islands perform.",
+        "image": "images/danca.jpg"
     },
     {
         "id": 7,
-        "title": "Semana Gastronômica",
+        "title": "Gastronomic Week",
         "date": "2025-10-20",
-        "location": "Avenida Marginal",
-        "description": "Restaurantes locais apresentam pratos típicos e contemporâneos.",
-        "image": "images/gastronomia1.jpg"
+        "location": "Marginal Avenue",
+        "description": "Presentation of national dishes by local restaurants and the Kavala Fresh Festival",
+        "image": "images/gastronomia.jpg"
     },
     {
         "id": 8,
-        "title": "Noite de Jazz",
+        "title": "Jazz Night",
         "date": "2025-11-01",
-        "location": "Bar Cultural Mindelo",
-        "description": "Artistas de jazz locais e internacionais.",
-        "image": "images/jazz1.jpg"
+        "location": "Don Luís Square",
+        "description": "Local and international jazz artists.",
+        "image": "images/jazz.jpeg"
     },
     {
         "id": 9,
-        "title": "Festival de Cinema",
+        "title": "Film Festival",
         "date": "2025-11-10",
-        "location": "Centro Cultural do Mindelo",
-        "description": "Exibição de filmes cabo-verdianos e internacionais.",
-        "image": "images/cinema1.jpg"
+        "location": "Mindelo Cultural Center",
+        "description": "Screening of Cape Verdean and international films.",
+        "image": "images/cinema.jpg"
     },
     {
         "id": 10,
-        "title": "Palestra sobre História Local",
+        "title": "Lecture on Local History",
         "date": "2025-11-15",
-        "location": "Biblioteca Municipal",
-        "description": "Historiadores compartilham pesquisas sobre a cidade.",
-        "image": "images/historia1.jpg"
+        "location": "People Palace",
+        "description": "Historians share research on the city",
+        "image": "images/historia.jpg"
     },
     {
         "id": 11,
-        "title": "Exposição Fotográfica",
+        "title": "Photographic Exhibition",
         "date": "2025-11-25",
-        "location": "Galeria Mindelo",
-        "description": "Fotógrafos capturam a essência da vida em Cabo Verde.",
-        "image": "images/fotografia1.jpg"
+        "location": "Mindelo Cultural Center",
+        "description": "Photographers capture the essence of life in Cape Verde.",
+        "image": "images/fotografia.jpg"
     },
     {
         "id": 12,
         "title": "Festival de Música Eletrônica",
         "date": "2025-12-05",
-        "location": "Praia da Laginha",
-        "description": "DJs e produtores animam a noite com música eletrônica.",
-        "image": "images/eletronica1.jpg"
+        "location": "Laginha Beach",
+        "description": "DJs and producers liven up the night with electronic music.",
+        "image": "images/eletronica.jpg"
     },
     {
         "id": 13,
