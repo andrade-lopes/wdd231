@@ -94,8 +94,10 @@ nav a:hover {
     position: absolute;
     inset: 0;
     background: url('images/mindelo_art_culture.jpg') no-repeat center center;
-    background-size: cover; /* cobre todo o hero */
-    filter: blur(15px); /* aplica o efeito de desfoque */
+    background-size: cover;
+    /* cobre todo o hero */
+    filter: blur(15px);
+    /* aplica o efeito de desfoque */
     transform: scale(1.1);
     z-index: 0;
 }
@@ -106,7 +108,8 @@ nav a:hover {
     position: absolute;
     inset: 0;
     background: url('images/mindelo_art_culture.jpg') no-repeat center center;
-    background-size: contain; /* mostra 100% da imagem */
+    background-size: contain;
+    /* mostra 100% da imagem */
     background-repeat: no-repeat;
     z-index: 1;
 }
@@ -125,6 +128,7 @@ nav a:hover {
 .hero p {
     font-size: 1.3rem;
     margin-bottom: 20px;
+    color: var(--primary-color)
 }
 
 .btn {
@@ -138,6 +142,54 @@ nav a:hover {
 
 .btn:hover {
     background: var(--primary-color);
+}
+
+.contact-form form {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    /* Label na coluna 1, campo na coluna 2 */
+    gap: 0.8rem 1.5rem;
+    /* Espaçamento entre linhas e colunas */
+    max-width: 600px;
+    margin: 0 auto;
+    /* centralizar o formulário */
+    align-items: center;
+}
+
+.contact-form label {
+    justify-self: end;
+    /* alinhamento à direita da label */
+    font-weight: bold;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 0.5rem;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    resize: vertical;
+    /* só permite redimensionar verticalmente no textarea */
+}
+
+/* Botão ocupar as duas colunas e centralizado */
+.contact-form button {
+    grid-column: 1 / -1;
+    /* ocupar todas as colunas */
+    justify-self: center;
+    padding: 0.7rem 2rem;
+    font-size: 1.1rem;
+    border: none;
+    background-color: #007BFF;
+    color: white;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.contact-form button:hover {
+    background-color: #0056b3;
 }
 
 /* --------------------
@@ -171,13 +223,13 @@ footer a {
         padding: 1rem;
     }
 
-@media (max-width: 768px) {
-    .hero {
-        background-size: contain;
-        background-color: black;
-        /* fundo atrás da imagem */
+    @media (max-width: 768px) {
+        .hero {
+            background-size: contain;
+            background-color: black;
+            /* fundo atrás da imagem */
+        }
     }
-}
 
     nav ul.show {
         display: flex;
