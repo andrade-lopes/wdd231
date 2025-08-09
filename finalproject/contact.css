@@ -144,70 +144,74 @@ nav a:hover {
     background: var(--primary-color);
 }
 
+.contact-form {
+    padding: 2rem;
+    background: #f9f9f9;
+    border-radius: 10px;
+    max-width: 700px;
+    margin: auto;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
 .contact-form form {
     display: grid;
-    grid-template-columns: 1fr 2fr;
-    /* Label na coluna 1, campo na coluna 2 */
-    gap: 0.8rem 1.5rem;
-    /* Espaçamento entre linhas e colunas */
-    max-width: 600px;
-    margin: 0 auto;
-    /* centralizar o formulário */
-    align-items: center;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+}
+
+/* Duas colunas no desktop */
+@media (min-width: 768px) {
+    .contact-form form {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    /* Mensagem ocupa 2 colunas */
+    .contact-form textarea {
+        grid-column: span 2;
+    }
+
+    /* Botão ocupa 2 colunas */
+    .contact-form button {
+        grid-column: span 2;
+    }
 }
 
 .contact-form label {
-    justify-self: end;
-    /* alinhamento à direita da label */
     font-weight: bold;
+    color: #333;
 }
 
 .contact-form input,
 .contact-form textarea {
     width: 100%;
-    padding: 0.5rem;
-    font-size: 1rem;
+    padding: 0.8rem;
     border: 1px solid #ccc;
     border-radius: 5px;
-    resize: vertical;
-    /* só permite redimensionar verticalmente no textarea */
+    font-size: 1rem;
+    transition: border-color 0.3s;
 }
 
-/* Botão ocupar as duas colunas e centralizado */
+.contact-form input:focus,
+.contact-form textarea:focus {
+    outline: none;
+    border-color: #007BFF;
+}
+
 .contact-form button {
-    grid-column: 1 / -1;
-    /* ocupar todas as colunas */
-    justify-self: center;
-    padding: 0.7rem 2rem;
-    font-size: 1.1rem;
-    border: none;
-    background-color: #007BFF;
+    background: var(--accent-color);
     color: white;
-    border-radius: 6px;
+    padding: 0.8rem;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
     cursor: pointer;
-    transition: background-color 0.3s ease;
+    justify-self: center;
+    /* Centraliza o botão */
+    transition: background 0.3s;
 }
 
 .contact-form button:hover {
-    background-color: #0056b3;
-}
-
-/* 📱 Mobile-friendly */
-@media (max-width: 600px) {
-    .contact-form form {
-        grid-template-columns: 1fr;
-        /* uma única coluna */
-    }
-
-    .contact-form label {
-        justify-self: start;
-        /* alinha label à esquerda */
-    }
-
-    .contact-form button {
-        justify-self: stretch;
-        /* botão ocupa toda a largura */
-    }
+    background: var(--primary-color);
 }
 
 /* --------------------
