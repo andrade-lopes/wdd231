@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
@@ -44,15 +44,17 @@
 
     <!-- Main content -->
     <main>
+        <!-- hero Section -->
         <section class="hero">
             <div class="hero-content">
                 <h1>Welcome to Mindelo</h1>
                 <p>Explore the vibrant cultural and artistic scene of this charming city.</p>
-                <a href="#" class="btn" id="openModal">Learn more</a>
+                <a href="#" class="btn learn-more" data-time="About Mindelo" data-text="Mindelo is known for its rich culture, music, vibrant Carnival, and beautiful beaches.
+                It is the artistic heart of Cape Verde.">Learn more</a>
             </div>
         </section>
 
-        <!-- Modal (fora da seção hero) -->
+        <!-- Modal (fora da seção hero) --
         <div id="myModal" class="modal">
             <div class="modal-content">
                 <span class="close">&times;</span>
@@ -60,31 +62,46 @@
                 <p>Mindelo is known for its rich culture, music, vibrant Carnival, and beautiful beaches.
                 It is the artistic heart of Cape Verde.</p>
             </div>
-        </div>
+        </div> -->
 
+        <!-- Highlights Section -->
         <section class="highlights">
             <h2>Highlights</h2>
+
             <div class="cards-grid">
                 <div class="card">
                     <img src="images/festivalbaia.jpg" alt="Music Festival" loading="lazy">
                     <h3>Baía das Gatas Music Festival</h3>
                     <p>The annual event that celebrates rhythms from around the world in Mindelo.</p>
-                    <a href="about" class="btn">Learn more</a>
+                    <a href="#" class="btn learn-more" data-title="Baía das Gatas Music Festival" data-text="The annual event that celebrates rhythms from around the world in Mindelo.">Learn more</a>
                 </div>
+
                 <div class="card">
                     <img src="images/artes.jpeg" alt="Art Exhibition" loading="lazy">
                     <h3>Art Exhibition</h3>
                     <p>Local artists present works inspired by the islands and the sea.</p>
-                    <a href="about" class="btn">Learn more</a>
+                    <a href="#" class="btn learn-more" data-title="Art Exhibition" 
+                       data-text="Local artists present works inspired by the islands and the sea.">Learn more</a>
                 </div>
+
                 <div class="card">
                     <img src="images/mandingas.jpeg" alt="Traditional Dance and Theater" loading="lazy">
                     <h3>Traditional Dance and Theater</h3>
                     <p>Movements that tell stories of our cultural heritage.</p>
-                    <a href="about" class="btn">Learn more</a>
+                    <a href="#" class="btn learn-more" data-title="Traditional Dance and Theater" 
+                       data-text="Movements that tell stories of our cultural heritage.">Learn more</a>
                 </div>
             </div>
         </section>
+
+        <!-- Single Modal -->
+        <div id="myModal" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <h2 id="modalTitle"></h2>
+                <p id="modalText"></p>
+            </div>
+        </div>
     </main>
 
     <!-- Footer -->
@@ -97,5 +114,3 @@
 </body>
 
 </html>
-
-<!-- Explicacao secao hero | no Chats ChatGPT -->

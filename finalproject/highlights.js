@@ -1,22 +1,29 @@
-// Pega os elementos
+// Get the elements
 const modal = document.getElementById("myModal");
-const openBtn = document.getElementById("openModal");
+const modalTitle = document.getElementById("modalTitle");
+const modalText = document.getElementById("modalText");
 const closeBtn = document.querySelector(".close");
 
-// Abrir modal
-openBtn.onclick = function (e) {
-    e.preventDefault(); // evita que o link recarregue a página
-    modal.style.display = "block";
-}
+// Open modal
+//openBtn.onclick = function (e) {
+    //e.preventDefault(); // evita que o link recarregue a página
+    //modal.style.display = "block";
+//}
 
-// Fechar modal
-closeBtn.onclick = function () {
-    modal.style.display = "none";
-}
+// All buttons with learn-more
+document.querySelectorAll(".learn-more").forEach(button => {
+    button.addEventListener("click", function (e) {
+        e.preventDefault();
+        modalTitle.textContent = this.getAttribute("data-title");
+        modalText.textContent = this.getAttribute("data-text");
+        modal.style.display = "block";
+    });
+});
 
-// Fechar clicando fora do conteúdo
-window.onclick = function (event) {
-    if (event.target === modal) {
-        modal.style.display = "none";
-    }
-}
+// Close by clicking the X
+closeBtn.onclick = () => modal.style.display = "none";
+
+// Close by clicking outside the modal
+window.onclick = (e) => {
+    if (e.target === modal) modal.style.display = "none";
+};
