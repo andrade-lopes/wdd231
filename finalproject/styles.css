@@ -62,13 +62,19 @@ nav a:hover {
 }
 
 /* Hamburger Button (Mobile) */
-#menu-toggle {
+#menu {
     display: none;
+    flex-direction: column;
+    ;
     font-size: 1.5rem;
     background: none;
     border: none;
     color: white;
     cursor: pointer;
+}
+
+#menu.show {
+    display: flex;
 }
 
 /* --------------------
@@ -236,6 +242,18 @@ footer a {
 @media (min-width: 769px) {
     .highlights .grid {
         grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+/* On desktop (larger width) the menu is always visible */
+@media (min-width: 768px) {
+    #menu {
+        display: flex !important;
+        flex-direction: row;
+    }
+
+    #menu-button {
+        display: none;
     }
 }
 
